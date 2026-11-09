@@ -1,0 +1,23 @@
+@use "./tokens" as *;
+
+section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    padding: $small;
+    gap: $small;
+
+    &.app_layout {
+        padding-top: 0;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1023px) {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(4, 1fr);
+        padding: calc($small * 0.5);
+    }
+}
