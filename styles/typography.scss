@@ -1,11 +1,9 @@
-@use "sass:color";
 @use "./tokens" as *;
 
 // Font families
-$heading_font: var(--font-display), "Cormorant Garamond", serif;
-$subheading_font: $heading_font;
-$paragraph_font: var(--font-body), "Inter", sans-serif;
-$mono_font: var(--font-mono), "JetBrains Mono", monospace;
+$heading_font: var(--font-space-grotesk), sans-serif;
+$paragraph_font: var(--font-inter), sans-serif;
+$mono_font: var(--font-jetbrains-mono), monospace;
 
 // Font weights
 $font_light: 300;
@@ -13,9 +11,6 @@ $font_regular: 400;
 $font_semibold: 500;
 $font_bold: 600;
 $font_extrabold: 700;
-
-// Font styles
-$font_italic: italic;
 
 html,
 body {

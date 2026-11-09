@@ -10,10 +10,10 @@
 - [x] Initialise Next.js with App Router, TypeScript, ESLint and `src/` directory.
 - [x] Configure the `@/*` import alias.
 - [x] Install Sass, next-themes, next-intl, Motion, Lucide, Locomotive Scroll, Three.js, R3F and Drei.
-- [ ] Add `.env.local` and `.env.example`; never commit secrets.
+- [x] Add `.env.local` and `.env.example`; never commit secrets.
 - [x] Configure ESLint, Prettier and TypeScript strict mode.
-- [ ] Write an initial README with project purpose and tech stack.
-- [ ] Commit: `chore: initialise BreakPatch application`.
+- [x] Write an initial README with project purpose and tech stack.
+- [x] Commit: `chore: initialise BreakPatch application`.
 
 ```bash
 npx create-next-app@latest breakpatch --ts --eslint --app --src-dir --import-alias "@/*"
@@ -26,11 +26,11 @@ git commit -m "chore: initialise BreakPatch application"
 
 ## Phase 2 — Folder architecture
 
-- [ ] Create the directory structure below.
-- [ ] Separate shared UI components from layout components.
-- [ ] Keep animation utilities independent from components.
-- [ ] Reserve `three/` for procedural geometry, shaders and GLTF assets.
-- [ ] Create `data/` for temporary case-study data before adding Supabase.
+- [x] Create the directory structure below.
+- [x] Separate shared UI components from layout components.
+- [x] Keep animation utilities independent from components.
+- [x] Reserve `three/` for procedural geometry, shaders and GLTF assets.
+- [x] Create `data/` for temporary case-study data before adding Supabase.
 
 ```text
 src/
