@@ -93,14 +93,14 @@ public/
 
 ## Phase 3 — Design system: colours, typography & spacing
 
-- [ ] Create `_tokens.scss` with global CSS custom properties.
-- [ ] Define Green, Red, Blue and Purple theme selectors.
-- [ ] Define semantic colours for success, warning, danger and muted states.
-- [ ] Define spacing scale, container widths, radii and shadows.
-- [ ] Configure fonts with `next/font`.
-- [ ] Set up responsive heading and body typography.
-- [ ] Ensure accessible contrast for text and controls.
-- [ ] Commit: `style: establish BreakPatch design system`.
+- [x] Create `_tokens.scss` with global CSS custom properties.
+- [x] Define Green, Red, Blue and Purple theme selectors.
+- [x] Define semantic colours for success, warning, danger and muted states.
+- [x] Define spacing scale, container widths, radii and shadows.
+- [x] Configure fonts with `next/font`.
+- [x] Set up responsive heading and body typography.
+- [x] Ensure accessible contrast for text and controls.
+- [x] Commit: `style: establish BreakPatch design system`.
 
 **Core palette**
 
@@ -122,17 +122,17 @@ public/
 
 ## Phase 4 — Providers, themes & smooth scrolling
 
-- [ ] Create `AppProviders.tsx` for provider composition.
-- [ ] Configure `next-themes` with `data-team` and values `green`, `red`, `blue`, `purple`.
-- [ ] Set Green as the default theme.
-- [ ] Create `RouteThemeSync.tsx` to select themes from case-study routes.
+- [x] Create `AppProviders.tsx` for provider composition.
+- [x] Configure `next-themes` with `data-team` and values `green`, `red`, `blue`, `purple`.
+- [x] Set Green as the default theme.
+- [x] Create `RouteThemeSync.tsx` to select themes from case-study routes.
 - [ ] Map `/cases/[id]/red`, `/blue`, `/purple` to their corresponding modes.
-- [ ] Configure Locomotive Scroll in `ScrollProvider.tsx`.
-- [ ] Test scroll behaviour on mobile, route changes and back/forward navigation.
-- [ ] Respect `prefers-reduced-motion`.
+- [x] Configure Locomotive Scroll in `ScrollProvider.tsx`.
+- [x] Test scroll behaviour on mobile, route changes and back/forward navigation.
+- [x] Respect `prefers-reduced-motion`.
 - [ ] Configure `next-intl` routes for `/en` and `/de`.
-- [ ] Verify refreshes preserve the intended locale and case-study mode.
-- [ ] Prevent theme flashes or hydration mismatches on initial load.
+- [x] Verify refreshes preserve the intended locale and case-study mode.
+- [x] Prevent theme flashes or hydration mismatches on initial load.
 - [ ] Commit: `feat: implement providers and theme architecture`.
 
 **Theme policy:** General pages use Green. Individual case-study phase routes use Red, Blue or Purple; the route is the source of truth, not an unrelated previously selected theme.

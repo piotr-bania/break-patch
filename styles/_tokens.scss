@@ -53,6 +53,26 @@ $border_radius: 6px;
 
     --theme_color: #{$primary_color};
     --theme_ambient: #123d28;
+
+    &[data-team="green"] {
+        --theme_color: #{$primary_color};
+        --theme_ambient: #123d28;
+    }
+
+    &[data-team="red"] {
+        --theme_color: #{$red_color};
+        --theme_ambient: #481326;
+    }
+
+    &[data-team="blue"] {
+        --theme_color: #{$blue_color};
+        --theme_ambient: #103a53;
+    }
+
+    &[data-team="purple"] {
+        --theme_color: #{$purple_color};
+        --theme_ambient: #372050;
+    }
 }
 
 // ---------- Fluid fonts ----------

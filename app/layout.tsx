@@ -4,6 +4,9 @@ import "./globals.scss"
 import type { Metadata } from "next"
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google"
 
+import App_Provider from "@/providers/App_Provider"
+import Lenis_Provider from "@/providers/Lenis_Provider"
+
 const spaceGrotesk = Space_Grotesk({
     variable: "--font-space-grotesk",
     subsets: ["latin"],
@@ -28,9 +31,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
         <html
             lang="en"
-            className={`${spaceGrotesk.variable} ${inter.variable} ${jetBrainsMono.variable} h-full antialiased`} suppressHydrationWarning
+            data-team="green"
+            data-lenis-root
+            data-lenis-scroll-container
+            className={`${spaceGrotesk.variable} ${inter.variable} ${jetBrainsMono.variable} h-full antialiased`}
+            suppressHydrationWarning
         >
-            <body className="min-h-full flex flex-col" suppressHydrationWarning>{children}</body>
+            <body className="min-h-full flex flex-col" suppressHydrationWarning>
+                <Lenis_Provider />
+                <App_Provider>{children}</App_Provider>
+            </body>
         </html>
     )
 }
